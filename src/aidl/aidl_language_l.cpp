@@ -1,6 +1,6 @@
-#line 1 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.cpp"
+#line 1 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.cpp"
 
-#line 3 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.cpp"
+#line 3 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.cpp"
 
 #define  YY_INT_ALIGNED short int
 
@@ -564,7 +564,7 @@ static const flex_int16_t yy_chk[313] =
 #define yymore() yymore_used_but_not_detected
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
-#line 1 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 1 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 /*
  * Copyright (C) 2016, The Android Open Source Project
  *
@@ -580,7 +580,7 @@ static const flex_int16_t yy_chk[313] =
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#line 18 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 18 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 #include <string.h>
 #include <stdlib.h>
 
@@ -597,10 +597,10 @@ static const flex_int16_t yy_chk[313] =
 #endif
 
 #define YY_USER_ACTION yylloc->columns(yyleng);
-#line 600 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.cpp"
+#line 600 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.cpp"
 #define YY_NO_INPUT 1
 
-#line 603 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.cpp"
+#line 603 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.cpp"
 
 #define INITIAL 0
 #define LONG_COMMENT 1
@@ -883,10 +883,10 @@ YY_DECL
 		}
 
 	{
-#line 51 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 51 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 
 
-#line 54 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 54 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
   /* This happens at every call to yylex (every time we receive one token) */
   using android::aidl::Comments;
   using android::aidl::Comment;
@@ -895,7 +895,7 @@ YY_DECL
   yylloc->step();
 
 
-#line 898 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.cpp"
+#line 898 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.cpp"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -954,42 +954,42 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 62 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 62 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { extra_text += yytext; BEGIN(LONG_COMMENT); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 63 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 63 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { extra_text += yytext; yylloc->step(); BEGIN(INITIAL);
                         comments.push_back({extra_text});
                         extra_text.clear(); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 66 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 66 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { extra_text += yytext; }
 	YY_BREAK
 case 4:
 /* rule 4 can match eol */
 YY_RULE_SETUP
-#line 67 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 67 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { extra_text += yytext; yylloc->lines(yyleng); }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 68 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 68 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { extra_text += yytext; }
 	YY_BREAK
 case 6:
 /* rule 6 can match eol */
 YY_RULE_SETUP
-#line 70 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 70 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken(yytext, comments);
                         return yy::parser::token::C_STR; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 73 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 73 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { extra_text += yytext; extra_text += "\n";
                         comments.push_back({extra_text});
                         extra_text.clear(); }
@@ -997,179 +997,179 @@ YY_RULE_SETUP
 case 8:
 /* rule 8 can match eol */
 YY_RULE_SETUP
-#line 77 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 77 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylloc->lines(yyleng); yylloc->step(); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 78 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 78 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 {}
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
 case YY_STATE_EOF(LONG_COMMENT):
-#line 79 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 79 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yyterminate(); }
 	YY_BREAK
 /* symbols */
 case 10:
 YY_RULE_SETUP
-#line 82 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 82 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('('); }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 83 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 83 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(')'); }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 84 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 84 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('<'); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 85 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 85 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('>'); }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 86 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 86 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('{'); }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 87 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 87 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('}'); }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 88 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 88 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('['); }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 89 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 89 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(']'); }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 90 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 90 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(':'); }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 91 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 91 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(';'); }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 92 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 92 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(','); }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 93 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 93 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('.'); }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 94 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 94 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('='); }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 95 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 95 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('+'); }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 96 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 96 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('-'); }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 97 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 97 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('*'); }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('/'); }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 99 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 99 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('%'); }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 100 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 100 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('&'); }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 101 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 101 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('|'); }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 102 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 102 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('^'); }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 103 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 103 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(yy::parser::token::LSHIFT); }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 104 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 104 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(yy::parser::token::RSHIFT); }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 105 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 105 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(yy::parser::token::LOGICAL_AND); }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 106 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 106 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(yy::parser::token::LOGICAL_OR);  }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 107 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 107 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('!'); }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 108 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 108 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return('~'); }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 109 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 109 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(yy::parser::token::LEQ); }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 110 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 110 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(yy::parser::token::GEQ); }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 111 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 111 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(yy::parser::token::EQUALITY); }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 112 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 112 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return(yy::parser::token::NEQ); }
 	YY_BREAK
 /* annotations */
 case 41:
 YY_RULE_SETUP
-#line 115 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 115 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken(yytext + 1, comments);
                         return yy::parser::token::ANNOTATION;
                       }
@@ -1177,84 +1177,84 @@ YY_RULE_SETUP
 /* keywords */
 case 42:
 YY_RULE_SETUP
-#line 120 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 120 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("parcelable", comments);
                         return yy::parser::token::PARCELABLE;
                       }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 123 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 123 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("import", comments);
                         return yy::parser::token::IMPORT; }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 125 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 125 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("package", comments);
                         return yy::parser::token::PACKAGE; }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 127 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 127 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return yy::parser::token::IN; }
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 128 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 128 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return yy::parser::token::OUT; }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 129 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 129 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return yy::parser::token::INOUT; }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 130 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 130 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("cpp_header", comments);
                         return yy::parser::token::CPP_HEADER; }
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 132 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 132 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("const", comments);
                         return yy::parser::token::CONST; }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 134 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 134 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return yy::parser::token::TRUE_LITERAL; }
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 135 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 135 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return yy::parser::token::FALSE_LITERAL; }
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 137 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 137 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("interface", comments);
                         return yy::parser::token::INTERFACE;
                       }
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 140 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 140 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("oneway", comments);
                         return yy::parser::token::ONEWAY;
                       }
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 143 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 143 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("enum", comments);
                         return yy::parser::token::ENUM;
                       }
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 146 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 146 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken("union", comments);
                         return yy::parser::token::UNION;
                       }
@@ -1262,47 +1262,47 @@ YY_RULE_SETUP
 /* scalars */
 case 56:
 YY_RULE_SETUP
-#line 151 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 151 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken(yytext, comments);
                         return yy::parser::token::IDENTIFIER;
                       }
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 154 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 154 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken(std::string(yytext, yyleng), comments);
                         return yy::parser::token::CHARVALUE; }
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 156 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 156 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken(yytext, comments);
                         return yy::parser::token::INTVALUE; }
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 158 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 158 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken(yytext, comments);
                         return yy::parser::token::FLOATVALUE; }
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 160 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 160 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { yylval->token = new AidlToken(yytext, comments);
                         return yy::parser::token::HEXVALUE; }
 	YY_BREAK
 /* lexical error! */
 case 61:
 YY_RULE_SETUP
-#line 164 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 164 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 { return yy::parser::token::UNKNOWN; }
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 166 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 166 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 ECHO;
 	YY_BREAK
-#line 1305 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.cpp"
+#line 1305 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.cpp"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -2455,7 +2455,7 @@ void yyfree (void * ptr , yyscan_t yyscanner)
 
 #define YYTABLES_NAME "yytables"
 
-#line 166 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_l.ll"
+#line 166 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_l.ll"
 
 
 // comment and whitespace handling

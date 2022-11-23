@@ -36,8 +36,8 @@
 // especially those whose name start with YY_ or yy_.  They are
 // private implementation details that can be changed or removed.
 
-#ifndef YY_YY_STORAGE_EMULATED_0_APPPROJECTS_AAPT_SRC_AIDL_AIDL_LANGUAGE_Y_H_INCLUDED
-# define YY_YY_STORAGE_EMULATED_0_APPPROJECTS_AAPT_SRC_AIDL_AIDL_LANGUAGE_Y_H_INCLUDED
+#ifndef YY_YY_DATA_DATA_COM_TERMUX_FILES_HOME_PROJECTS_AAPT_SRC_AIDL_AIDL_LANGUAGE_Y_H_INCLUDED
+# define YY_YY_DATA_DATA_COM_TERMUX_FILES_HOME_PROJECTS_AAPT_SRC_AIDL_AIDL_LANGUAGE_Y_H_INCLUDED
 
 #include <iostream>
 #include <stdexcept>
@@ -97,7 +97,7 @@
 #endif
 
 namespace yy {
-#line 101 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.h"
+#line 101 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.h"
 
 
 
@@ -115,7 +115,7 @@ namespace yy {
     /// Symbol semantic values.
     union value_type
     {
-#line 70 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 70 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
 
     AidlToken* token;
     char character;
@@ -142,7 +142,7 @@ namespace yy {
     std::vector<std::string>* type_params;
     std::vector<std::unique_ptr<AidlDefinedType>>* declarations;
 
-#line 146 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.h"
+#line 146 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.h"
 
     };
 #endif
@@ -393,9 +393,9 @@ namespace yy {
   };
 
 } // yy
-#line 397 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.h"
+#line 397 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.h"
 
 
 
 
-#endif // !YY_YY_STORAGE_EMULATED_0_APPPROJECTS_AAPT_SRC_AIDL_AIDL_LANGUAGE_Y_H_INCLUDED
+#endif // !YY_YY_DATA_DATA_COM_TERMUX_FILES_HOME_PROJECTS_AAPT_SRC_AIDL_AIDL_LANGUAGE_Y_H_INCLUDED

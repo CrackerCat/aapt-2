@@ -54,7 +54,7 @@
 
 
 // First part of user prologue.
-#line 17 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 17 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
 
 #include "aidl_language.h"
 #include "parser.h"
@@ -91,7 +91,7 @@ AidlLocation loc(const yy::parser::location_type& l) {
 #define lex_scanner ps->Scanner()
 
 
-#line 95 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 95 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -331,12 +331,12 @@ static YYLTYPE yyloc_default
 ;
 
 // Second part of user prologue.
-#line 335 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 335 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
 static void
 yyerror (const yy::parser::location_type *yylocationp,
          yy::parser& yyparser, Parser* ps,
          const char* msg);
-#line 340 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 340 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
 
 
 #include <stddef.h>
@@ -1697,7 +1697,7 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
   switch (yyrule)
     {
   case 2: // document: optional_package imports decls
-#line 183 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 183 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                   {
     Comments comments;
     if ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token)) {
@@ -1714,105 +1714,105 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token_list);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declarations);
   }
-#line 1718 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1718 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 3: // identifier: "identifier"
-#line 207 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 207 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).token) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token); }
-#line 1724 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1724 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 4: // identifier: "cpp_header (which can also be used as an identifier)"
-#line 208 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 208 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).token) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token); }
-#line 1730 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1730 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 5: // optional_package: %empty
-#line 212 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 212 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    {
     ((*yyvalp).token) = nullptr;
  }
-#line 1738 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1738 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 6: // optional_package: "package" qualified_name ';'
-#line 215 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 215 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                               {
     ps->SetPackage((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token)->GetText());
     ((*yyvalp).token) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token); // for comments
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token);
   }
-#line 1748 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1748 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 7: // imports: %empty
-#line 223 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 223 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).token_list) = new std::vector<std::unique_ptr<AidlToken>>(); }
-#line 1754 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1754 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 8: // imports: imports import
-#line 225 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 225 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   {
     ((*yyvalp).token_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token_list);
     ((*yyvalp).token_list)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token));
   }
-#line 1763 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1763 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 9: // import: "import" qualified_name ';'
-#line 231 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 231 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     // carry the comments before "import" token
     ((*yyvalp).token) = new AidlToken((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token)->GetText(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token)->GetComments());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token);
   }
-#line 1774 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1774 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 10: // qualified_name: identifier
-#line 239 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 239 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
               {
     ((*yyvalp).token) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 1782 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1782 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 11: // qualified_name: qualified_name '.' identifier
-#line 243 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 243 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { ((*yyvalp).token) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token);
     ((*yyvalp).token)->Append('.');
     ((*yyvalp).token)->Append((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 1792 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1792 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 12: // decls: decl
-#line 251 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 251 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { ((*yyvalp).declarations) = new std::vector<std::unique_ptr<AidlDefinedType>>();
     if ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration) != nullptr) {
       ((*yyvalp).declarations)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration));
     }
   }
-#line 1802 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1802 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 13: // decls: decls decl
-#line 257 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 257 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { ((*yyvalp).declarations) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.declarations);
     if ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration) != nullptr) {
       ((*yyvalp).declarations)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration));
     }
   }
-#line 1812 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1812 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 14: // decl: annotation_list unannotated_decl
-#line 265 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 265 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    {
     ((*yyvalp).declaration) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration);
 
@@ -1824,91 +1824,91 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
 
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.annotation_list);
    }
-#line 1828 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1828 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 15: // unannotated_decl: parcelable_decl
-#line 279 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 279 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).declaration) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration); }
-#line 1834 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1834 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 16: // unannotated_decl: interface_decl
-#line 280 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 280 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).declaration) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration); }
-#line 1840 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1840 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 17: // unannotated_decl: enum_decl
-#line 281 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 281 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).declaration) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration); }
-#line 1846 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1846 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 18: // unannotated_decl: union_decl
-#line 282 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 282 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).declaration) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration); }
-#line 1852 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1852 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 19: // type_params: identifier
-#line 286 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 286 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
               {
     ((*yyvalp).type_params) = new std::vector<std::string>();
     ((*yyvalp).type_params)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 1862 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1862 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 20: // type_params: type_params ',' identifier
-#line 291 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 291 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                               {
     (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.type_params)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     ((*yyvalp).type_params) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.type_params);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 1872 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1872 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 21: // optional_type_params: %empty
-#line 298 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 298 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                { ((*yyvalp).type_params) = nullptr; }
-#line 1878 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1878 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 22: // optional_type_params: '<' type_params '>'
-#line 299 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 299 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                         {
     ((*yyvalp).type_params) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.type_params);
   }
-#line 1886 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1886 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 23: // parcelable_decl: "parcelable" qualified_name optional_type_params ';'
-#line 304 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 304 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                       {
     // No check for type name here. We allow nested types for unstructured parcelables.
     ((*yyvalp).declaration) = new AidlParcelable(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token)->GetText(), ps->Package(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token)->GetComments(), "", (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.type_params));
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token);
  }
-#line 1897 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1897 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 24: // parcelable_decl: "parcelable" qualified_name optional_type_params '{' parcelable_members '}'
-#line 310 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 310 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                                              {
     ps->CheckValidTypeName(*(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token), loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yyloc)));
     ((*yyvalp).declaration) = new AidlStructuredParcelable(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token)->GetText(), ps->Package(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.token)->GetComments(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.type_params), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members));
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token);
  }
-#line 1908 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1908 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 25: // parcelable_decl: "parcelable" qualified_name "cpp_header (which can also be used as an identifier)" "string literal" ';'
-#line 316 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 316 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                   {
     // No check for type name here. We allow nested types for unstructured parcelables.
     ((*yyvalp).declaration) = new AidlParcelable(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token)->GetText(), ps->Package(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token)->GetComments(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token)->GetText());
@@ -1917,106 +1917,106 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token);
   }
-#line 1921 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1921 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 26: // parcelable_decl: "parcelable" error ';'
-#line 324 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 324 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                         {
     ps->AddError();
     ((*yyvalp).declaration) = nullptr;
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token);
   }
-#line 1931 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1931 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 27: // parcelable_members: %empty
-#line 331 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 331 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                {
     ((*yyvalp).members) = new std::vector<std::unique_ptr<AidlMember>>();
   }
-#line 1939 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1939 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 28: // parcelable_members: parcelable_members variable_decl
-#line 334 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 334 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                     {
     (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.variable));
     ((*yyvalp).members) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members);
   }
-#line 1948 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1948 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 29: // parcelable_members: parcelable_members constant_decl
-#line 338 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 338 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                     {
     (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.constant));
     ((*yyvalp).members) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members);
   }
-#line 1957 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1957 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 30: // parcelable_members: parcelable_members decl
-#line 342 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 342 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                            {
     if ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration)) (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration));  // decl may be nullptr on error
     ((*yyvalp).members) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members);
   }
-#line 1966 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1966 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 31: // parcelable_members: parcelable_members error ';'
-#line 346 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 346 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                 {
     ps->AddError();
     ((*yyvalp).members) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.members);
   }
-#line 1975 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1975 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 32: // variable_decl: type identifier ';'
-#line 352 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 352 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                        {
    ((*yyvalp).variable) = new AidlVariableDeclaration(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token)->GetText());
    delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token);
  }
-#line 1984 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1984 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 33: // variable_decl: type identifier '=' const_expr ';'
-#line 356 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 356 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                       {
    // TODO(b/123321528): Support enum type default assignments (TestEnum foo = TestEnum.FOO).
    ((*yyvalp).variable) = new AidlVariableDeclaration(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token)->GetText(),  (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.const_expr));
    delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token);
  }
-#line 1994 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 1994 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 34: // interface_decl: "interface" qualified_name ';'
-#line 364 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 364 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                 {
     ps->CheckValidTypeName(*(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token), loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yyloc)));
     ((*yyvalp).declaration) = new AidlInterface(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token)->GetText(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token)->GetComments(), false, ps->Package(), nullptr);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token);
   }
-#line 2005 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2005 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 35: // interface_decl: "interface" qualified_name '{' interface_members '}'
-#line 370 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 370 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                       {
     ps->CheckValidTypeName(*(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token), loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yyloc)));
     ((*yyvalp).declaration) = new AidlInterface(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token)->GetText(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token)->GetComments(), false, ps->Package(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members));
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token);
   }
-#line 2016 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2016 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 36: // interface_decl: "oneway" "interface" qualified_name '{' interface_members '}'
-#line 376 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 376 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                              {
     ps->CheckValidTypeName(*(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token), loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yyloc)));
     ((*yyvalp).declaration) = new AidlInterface(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token)->GetText(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.token)->GetComments(), true, ps->Package(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members));
@@ -2024,79 +2024,79 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token);
   }
-#line 2028 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2028 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 37: // interface_decl: "interface" error '{' interface_members '}'
-#line 383 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 383 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                              {
     ps->AddError();
     ((*yyvalp).declaration) = nullptr;
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members);
   }
-#line 2039 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2039 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 38: // interface_members: %empty
-#line 392 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 392 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { ((*yyvalp).members) = new std::vector<std::unique_ptr<AidlMember>>(); }
-#line 2045 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2045 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 39: // interface_members: interface_members method_decl
-#line 394 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 394 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members)->push_back(std::unique_ptr<AidlMember>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.method))); ((*yyvalp).members) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members); }
-#line 2051 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2051 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 40: // interface_members: interface_members constant_decl
-#line 396 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 396 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members)->push_back(std::unique_ptr<AidlMember>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.constant))); ((*yyvalp).members) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members); }
-#line 2057 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2057 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 41: // interface_members: interface_members decl
-#line 398 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 398 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   {
     if ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration)) (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.declaration));  // decl may be nullptr on error
     ((*yyvalp).members) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members);
   }
-#line 2066 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2066 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 42: // interface_members: interface_members error ';'
-#line 402 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 402 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                {
     ps->AddError();
     ((*yyvalp).members) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.members);
   }
-#line 2075 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2075 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 43: // const_expr: "true"
-#line 408 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 408 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                 { ((*yyvalp).const_expr) = AidlConstantValue::Boolean(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), true); }
-#line 2081 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2081 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 44: // const_expr: "false"
-#line 409 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 409 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                  { ((*yyvalp).const_expr) = AidlConstantValue::Boolean(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), false); }
-#line 2087 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2087 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 45: // const_expr: "char literal"
-#line 410 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 410 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
              {
     ((*yyvalp).const_expr) = AidlConstantValue::Character(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2096 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2096 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 46: // const_expr: "int literal"
-#line 414 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 414 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             {
     ((*yyvalp).const_expr) = AidlConstantValue::Integral(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     if (((*yyvalp).const_expr) == nullptr) {
@@ -2107,20 +2107,20 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     }
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2111 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2111 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 47: // const_expr: "float literal"
-#line 424 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 424 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
               {
     ((*yyvalp).const_expr) = AidlConstantValue::Floating(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2120 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2120 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 48: // const_expr: "hex literal"
-#line 428 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 428 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             {
     ((*yyvalp).const_expr) = AidlConstantValue::Integral(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     if (((*yyvalp).const_expr) == nullptr) {
@@ -2131,274 +2131,274 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     }
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2135 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2135 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 49: // const_expr: "string literal"
-#line 438 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 438 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
          {
     ((*yyvalp).const_expr) = AidlConstantValue::String(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2144 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2144 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 50: // const_expr: qualified_name
-#line 442 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 442 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                   {
     ((*yyvalp).const_expr) = new AidlConstantReference(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
  }
-#line 2153 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2153 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 51: // const_expr: '{' constant_value_list '}'
-#line 446 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 446 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                {
     ((*yyvalp).const_expr) = AidlConstantValue::Array(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<vector<unique_ptr<AidlConstantValue>>>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.constant_value_list)));
   }
-#line 2161 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2161 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 52: // const_expr: const_expr LOGICAL_OR const_expr
-#line 449 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 449 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                     {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "||", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2169 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2169 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 53: // const_expr: const_expr LOGICAL_AND const_expr
-#line 452 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 452 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                      {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "&&", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2177 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2177 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 54: // const_expr: const_expr '|' const_expr
-#line 455 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 455 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "|" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2185 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2185 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 55: // const_expr: const_expr '^' const_expr
-#line 458 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 458 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "^" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2193 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2193 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 56: // const_expr: const_expr '&' const_expr
-#line 461 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 461 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "&" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2201 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2201 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 57: // const_expr: const_expr EQUALITY const_expr
-#line 464 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 464 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                   {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "==", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2209 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2209 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 58: // const_expr: const_expr NEQ const_expr
-#line 467 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 467 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "!=", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2217 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2217 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 59: // const_expr: const_expr '<' const_expr
-#line 470 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 470 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "<" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2225 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2225 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 60: // const_expr: const_expr '>' const_expr
-#line 473 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 473 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), ">" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2233 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2233 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 61: // const_expr: const_expr LEQ const_expr
-#line 476 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 476 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "<=", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2241 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2241 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 62: // const_expr: const_expr GEQ const_expr
-#line 479 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 479 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), ">=", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2249 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2249 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 63: // const_expr: const_expr LSHIFT const_expr
-#line 482 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 482 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                 {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "<<", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2257 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2257 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 64: // const_expr: const_expr RSHIFT const_expr
-#line 485 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 485 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                 {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), ">>", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2265 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2265 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 65: // const_expr: const_expr '+' const_expr
-#line 488 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 488 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "+" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2273 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2273 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 66: // const_expr: const_expr '-' const_expr
-#line 491 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 491 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "-" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2281 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2281 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 67: // const_expr: const_expr '*' const_expr
-#line 494 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 494 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "*" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2289 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2289 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 68: // const_expr: const_expr '/' const_expr
-#line 497 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 497 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "/" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2297 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2297 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 69: // const_expr: const_expr '%' const_expr
-#line 500 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 500 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).const_expr) = new AidlBinaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.const_expr)), "%" , std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2305 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2305 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 70: // const_expr: '+' const_expr
-#line 503 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 503 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                     {
     ((*yyvalp).const_expr) = new AidlUnaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yyloc)), "+", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2313 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2313 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 71: // const_expr: '-' const_expr
-#line 506 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 506 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                     {
     ((*yyvalp).const_expr) = new AidlUnaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yyloc)), "-", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2321 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2321 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 72: // const_expr: '!' const_expr
-#line 509 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 509 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                   {
     ((*yyvalp).const_expr) = new AidlUnaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yyloc)), "!", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2329 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2329 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 73: // const_expr: '~' const_expr
-#line 512 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 512 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                   {
     ((*yyvalp).const_expr) = new AidlUnaryConstExpression(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yyloc)), "~", std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
   }
-#line 2337 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2337 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 74: // const_expr: '(' const_expr ')'
-#line 516 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 516 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   {
     ((*yyvalp).const_expr) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.const_expr);
   }
-#line 2345 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2345 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 75: // const_expr: '(' error ')'
-#line 520 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 520 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    {
      AIDL_ERROR(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc))) << "invalid const expression within parenthesis";
      ps->AddError();
      // to avoid segfaults
      ((*yyvalp).const_expr) = AidlConstantValue::Integral(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), "0");
    }
-#line 2356 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2356 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 76: // constant_value_list: %empty
-#line 529 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 529 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                {
     ((*yyvalp).constant_value_list) = new std::vector<std::unique_ptr<AidlConstantValue>>;
  }
-#line 2364 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2364 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 77: // constant_value_list: constant_value_non_empty_list
-#line 532 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 532 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                  {
     ((*yyvalp).constant_value_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.constant_value_list);
  }
-#line 2372 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2372 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 78: // constant_value_list: constant_value_non_empty_list ','
-#line 535 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 535 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                       {
     ((*yyvalp).constant_value_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.constant_value_list);
  }
-#line 2380 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2380 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 79: // constant_value_non_empty_list: const_expr
-#line 541 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 541 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
               {
     ((*yyvalp).constant_value_list) = new std::vector<std::unique_ptr<AidlConstantValue>>;
     ((*yyvalp).constant_value_list)->push_back(std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
  }
-#line 2389 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2389 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 80: // constant_value_non_empty_list: constant_value_non_empty_list ',' const_expr
-#line 545 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 545 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                 {
     ((*yyvalp).constant_value_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.constant_value_list);
     ((*yyvalp).constant_value_list)->push_back(std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr)));
  }
-#line 2398 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2398 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 81: // constant_decl: annotation_list "const" type identifier '=' const_expr ';'
-#line 552 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 552 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                             {
     if ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-6)].yystate.yysemantics.yyval.annotation_list)->size() > 0) {
       (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.type)->SetComments((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-6)].yystate.yysemantics.yyval.annotation_list)->begin()->get()->GetComments());
@@ -2412,59 +2412,59 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token);
    }
-#line 2416 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2416 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 82: // enumerator: identifier '=' const_expr
-#line 568 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 568 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).enumerator) = new AidlEnumerator(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token)->GetText(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token)->GetComments());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token);
    }
-#line 2425 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2425 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 83: // enumerator: identifier
-#line 572 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 572 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
               {
     ((*yyvalp).enumerator) = new AidlEnumerator(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText(), nullptr, (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetComments());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
    }
-#line 2434 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2434 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 84: // enumerators: enumerator
-#line 579 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 579 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
               {
     ((*yyvalp).enumerators) = new std::vector<std::unique_ptr<AidlEnumerator>>();
     ((*yyvalp).enumerators)->push_back(std::unique_ptr<AidlEnumerator>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.enumerator)));
    }
-#line 2443 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2443 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 85: // enumerators: enumerators ',' enumerator
-#line 583 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 583 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                               {
     (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.enumerators)->push_back(std::unique_ptr<AidlEnumerator>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.enumerator)));
     ((*yyvalp).enumerators) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.enumerators);
    }
-#line 2452 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2452 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 86: // enum_decl_body: '{' enumerators '}'
-#line 590 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 590 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                        { ((*yyvalp).enumerators) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.enumerators); }
-#line 2458 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2458 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 87: // enum_decl_body: '{' enumerators ',' '}'
-#line 591 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 591 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                            { ((*yyvalp).enumerators) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.enumerators); }
-#line 2464 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2464 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 88: // enum_decl: "enum" qualified_name enum_decl_body
-#line 595 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 595 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                       {
     ps->CheckValidTypeName(*(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token), loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yyloc)));
     ((*yyvalp).declaration) = new AidlEnumDeclaration(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token)->GetText(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.enumerators), ps->Package(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token)->GetComments());
@@ -2472,31 +2472,31 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.enumerators);
    }
-#line 2476 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2476 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 89: // union_decl: "union" qualified_name optional_type_params '{' parcelable_members '}'
-#line 605 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 605 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                                         {
     ps->CheckValidTypeName(*(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token), loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yyloc)));
     ((*yyvalp).declaration) = new AidlUnionDecl(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token)->GetText(), ps->Package(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.token)->GetComments(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.type_params), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.members));
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token);
   }
-#line 2487 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2487 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 90: // method_decl: type identifier '(' arg_list ')' ';'
-#line 614 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 614 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                         {
     ((*yyvalp).method) = new AidlMethod(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yyloc)), false, (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token)->GetText(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.arg_list), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.type)->GetComments());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token);
   }
-#line 2496 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2496 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 91: // method_decl: annotation_list "oneway" type identifier '(' arg_list ')' ';'
-#line 618 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 618 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                                {
     const auto& comments = ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-7)].yystate.yysemantics.yyval.annotation_list)->size() > 0) ? (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-7)].yystate.yysemantics.yyval.annotation_list)->begin()->get()->GetComments() : (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-6)].yystate.yysemantics.yyval.token)->GetComments();
     ((*yyvalp).method) = new AidlMethod(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yyloc)), true, (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token)->GetText(), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.arg_list), comments);
@@ -2505,11 +2505,11 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-6)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.token);
   }
-#line 2509 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2509 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 92: // method_decl: type identifier '(' arg_list ')' '=' "int literal" ';'
-#line 626 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 626 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                      {
     int32_t serial = 0;
     if (!android::base::ParseInt((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token)->GetText(), &serial)) {
@@ -2520,11 +2520,11 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-6)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token);
   }
-#line 2524 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2524 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 93: // method_decl: annotation_list "oneway" type identifier '(' arg_list ')' '=' "int literal" ';'
-#line 636 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 636 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                                             {
     const auto& comments = ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-9)].yystate.yysemantics.yyval.annotation_list)->size() > 0) ? (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-9)].yystate.yysemantics.yyval.annotation_list)->begin()->get()->GetComments() : (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-8)].yystate.yysemantics.yyval.token)->GetComments();
     int32_t serial = 0;
@@ -2539,59 +2539,59 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-6)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.token);
   }
-#line 2543 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2543 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 94: // arg_non_empty_list: arg
-#line 652 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 652 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
        {
     ((*yyvalp).arg_list) = new std::vector<std::unique_ptr<AidlArgument>>();
     ((*yyvalp).arg_list)->push_back(std::unique_ptr<AidlArgument>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.arg)));
   }
-#line 2552 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2552 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 95: // arg_non_empty_list: arg_non_empty_list ',' arg
-#line 656 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 656 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                               {
     ((*yyvalp).arg_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.arg_list);
     ((*yyvalp).arg_list)->push_back(std::unique_ptr<AidlArgument>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.arg)));
   }
-#line 2561 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2561 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 96: // arg_list: %empty
-#line 663 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 663 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).arg_list) = new std::vector<std::unique_ptr<AidlArgument>>(); }
-#line 2567 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2567 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 97: // arg_list: arg_non_empty_list
-#line 664 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 664 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                       { ((*yyvalp).arg_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.arg_list); }
-#line 2573 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2573 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 98: // arg: direction type identifier
-#line 668 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 668 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                              {
     ((*yyvalp).arg) = new AidlArgument(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.direction), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2582 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2582 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 99: // arg: type identifier
-#line 672 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 672 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                    {
     ((*yyvalp).arg) = new AidlArgument(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2591 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2591 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 100: // non_array_type: annotation_list qualified_name
-#line 678 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 678 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                   {
     ((*yyvalp).type) = new AidlTypeSpecifier(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText(), /*array=*/std::nullopt, nullptr, (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetComments());
     if (!(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.annotation_list)->empty()) {
@@ -2601,20 +2601,20 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.annotation_list);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2605 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2605 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 101: // non_array_type: non_array_type '<' type_args '>'
-#line 687 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 687 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                     {
     ps->SetTypeParameters((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.type_args));
     ((*yyvalp).type) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.type);
   }
-#line 2614 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2614 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 102: // non_array_type: non_array_type '<' non_array_type '<' type_args RSHIFT
-#line 691 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 691 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                           {
     ps->SetTypeParameters((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.type_args));
     auto params = new std::vector<std::unique_ptr<AidlTypeSpecifier>>();
@@ -2622,28 +2622,28 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     ps->SetTypeParameters((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.type), params);
     ((*yyvalp).type) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.type);
   }
-#line 2626 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2626 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 103: // non_array_type: non_array_type '<' type_args ',' non_array_type '<' type_args RSHIFT
-#line 698 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 698 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                                                         {
     ps->SetTypeParameters((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.type_args));
     (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.type_args)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.type));
     ps->SetTypeParameters((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-7)].yystate.yysemantics.yyval.type), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-5)].yystate.yysemantics.yyval.type_args));
     ((*yyvalp).type) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-7)].yystate.yysemantics.yyval.type);
   }
-#line 2637 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2637 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 104: // type: non_array_type
-#line 706 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 706 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
    { ((*yyvalp).type) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.type); }
-#line 2643 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2643 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 105: // type: type annotation_list '[' ']'
-#line 707 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 707 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                 {
     if (!(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.annotation_list)->empty()) {
       AIDL_ERROR(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yyloc))) << "Annotations for arrays are not supported.";
@@ -2656,11 +2656,11 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     ((*yyvalp).type) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.type);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.annotation_list);
   }
-#line 2660 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2660 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 106: // type: type annotation_list '[' const_expr ']'
-#line 719 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 719 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                            {
     if (!(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.annotation_list)->empty()) {
       AIDL_ERROR(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yyloc))) << "Annotations for arrays are not supported.";
@@ -2673,11 +2673,11 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     ((*yyvalp).type) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-4)].yystate.yysemantics.yyval.type);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.annotation_list);
   }
-#line 2677 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2677 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 107: // type_args: type
-#line 734 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 734 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
         {
     if (!(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.type)->GetAnnotations().empty()) {
       AIDL_ERROR(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc))) << "Annotations for type arguments are not supported.";
@@ -2686,72 +2686,72 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     ((*yyvalp).type_args) = new std::vector<std::unique_ptr<AidlTypeSpecifier>>();
     ((*yyvalp).type_args)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.type));
   }
-#line 2690 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2690 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 108: // type_args: type_args ',' type
-#line 742 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 742 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                       {
     (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.type_args)->emplace_back((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.type));
     ((*yyvalp).type_args) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.type_args);
   }
-#line 2699 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2699 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 109: // annotation_list: %empty
-#line 749 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 749 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { ((*yyvalp).annotation_list) = new std::vector<std::unique_ptr<AidlAnnotation>>(); }
-#line 2705 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2705 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 110: // annotation_list: annotation_list annotation
-#line 751 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 751 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   {
     if ((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.annotation) != nullptr) {
       (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.annotation_list)->emplace_back(std::unique_ptr<AidlAnnotation>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.annotation)));
     }
     ((*yyvalp).annotation_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.annotation_list);
   }
-#line 2716 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2716 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 111: // parameter: identifier '=' const_expr
-#line 759 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 759 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                               {
     ((*yyvalp).param) = new AidlAnnotationParameter{(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token)->GetText(), std::unique_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.const_expr))};
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.token);
   }
-#line 2725 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2725 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 112: // parameter_list: %empty
-#line 765 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 765 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
              {
     ((*yyvalp).param_list) = new std::map<std::string, std::shared_ptr<AidlConstantValue>>();
   }
-#line 2733 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2733 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 113: // parameter_list: parameter_non_empty_list
-#line 768 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 768 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                               {
     ((*yyvalp).param_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.param_list);
   }
-#line 2741 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2741 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 114: // parameter_non_empty_list: parameter
-#line 773 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 773 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
               {
     ((*yyvalp).param_list) = new std::map<std::string, std::shared_ptr<AidlConstantValue>>();
     ((*yyvalp).param_list)->emplace(std::move((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.param)->name), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.param)->value.release());
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.param);
   }
-#line 2751 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2751 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 115: // parameter_non_empty_list: parameter_non_empty_list ',' parameter
-#line 778 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 778 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                            {
     ((*yyvalp).param_list) = (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-2)].yystate.yysemantics.yyval.param_list);
     if (((*yyvalp).param_list)->find((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.param)->name) != ((*yyvalp).param_list)->end()) {
@@ -2761,11 +2761,11 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     ((*yyvalp).param_list)->emplace(std::move((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.param)->name), std::move((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.param)->value));
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.param);
   }
-#line 2765 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2765 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 116: // annotation: "annotation"
-#line 789 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 789 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
               {
     // release() returns nullptr if unique_ptr is empty.
     ((*yyvalp).annotation) = AidlAnnotation::Parse(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetText(), {}, (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token)->GetComments()).release();
@@ -2774,11 +2774,11 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     }
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yysemantics.yyval.token);
   }
-#line 2778 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2778 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 117: // annotation: "annotation" '(' const_expr ')'
-#line 797 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 797 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                  {
     auto value = std::shared_ptr<AidlConstantValue>((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.const_expr));
     std::map<std::string, std::shared_ptr<AidlConstantValue>> parameter_list {{"value" , value}};
@@ -2788,11 +2788,11 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     }
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token);
   }
-#line 2792 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2792 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 118: // annotation: "annotation" '(' parameter_list ')'
-#line 806 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 806 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
                                      {
     // release() returns nullptr if unique_ptr is empty.
     ((*yyvalp).annotation) = AidlAnnotation::Parse(loc((YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yyloc), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (0)].yystate.yyloc)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token)->GetText(), std::move(*(YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.param_list)), (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token)->GetComments()).release();
@@ -2802,29 +2802,29 @@ yyuserAction (yyRuleNum yyrule, int yyrhslen, yyGLRStackItem* yyvsp,
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-3)].yystate.yysemantics.yyval.token);
     delete (YY_CAST (yyGLRStackItem const *, yyvsp)[YYFILL (-1)].yystate.yysemantics.yyval.param_list);
   }
-#line 2806 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2806 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 119: // direction: "in"
-#line 819 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 819 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { ((*yyvalp).direction) = AidlArgument::IN_DIR; }
-#line 2812 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2812 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 120: // direction: "out"
-#line 821 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 821 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { ((*yyvalp).direction) = AidlArgument::OUT_DIR; }
-#line 2818 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2818 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
   case 121: // direction: "inout"
-#line 823 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 823 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
   { ((*yyvalp).direction) = AidlArgument::INOUT_DIR; }
-#line 2824 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2824 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
     break;
 
 
-#line 2828 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2828 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
 
       default: break;
     }
@@ -2887,321 +2887,321 @@ yydestruct (const char *yymsg,
   switch (yykind)
     {
     case S_PACKAGE: // "package"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2893 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2893 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_IMPORT: // "import"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2899 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2899 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_ANNOTATION: // "annotation"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2905 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2905 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_C_STR: // "string literal"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2911 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2911 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_IDENTIFIER: // "identifier"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2917 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2917 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_INTERFACE: // "interface"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2923 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2923 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_PARCELABLE: // "parcelable"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2929 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2929 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_ONEWAY: // "oneway"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2935 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2935 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_ENUM: // "enum"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2941 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2941 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_UNION: // "union"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2947 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2947 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_CONST: // "const"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2953 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2953 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_CHARVALUE: // "char literal"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2959 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2959 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_FLOATVALUE: // "float literal"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2965 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2965 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_HEXVALUE: // "hex literal"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2971 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2971 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_INTVALUE: // "int literal"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2977 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2977 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_CPP_HEADER: // "cpp_header (which can also be used as an identifier)"
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2983 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2983 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_identifier: // identifier
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2989 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2989 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_optional_package: // optional_package
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 2995 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 2995 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_imports: // imports
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token_list)); }
-#line 3001 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3001 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_import: // import
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 3007 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3007 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_qualified_name: // qualified_name
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).token)); }
-#line 3013 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3013 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_decls: // decls
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).declarations)); }
-#line 3019 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3019 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_decl: // decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).declaration)); }
-#line 3025 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3025 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_unannotated_decl: // unannotated_decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).declaration)); }
-#line 3031 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3031 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_type_params: // type_params
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).type_params)); }
-#line 3037 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3037 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_optional_type_params: // optional_type_params
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).type_params)); }
-#line 3043 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3043 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_parcelable_decl: // parcelable_decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).declaration)); }
-#line 3049 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3049 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_parcelable_members: // parcelable_members
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).members)); }
-#line 3055 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3055 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_variable_decl: // variable_decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).variable)); }
-#line 3061 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3061 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_interface_decl: // interface_decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).declaration)); }
-#line 3067 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3067 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_interface_members: // interface_members
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).members)); }
-#line 3073 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3073 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_const_expr: // const_expr
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).const_expr)); }
-#line 3079 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3079 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_constant_value_list: // constant_value_list
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).constant_value_list)); }
-#line 3085 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3085 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_constant_value_non_empty_list: // constant_value_non_empty_list
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).constant_value_list)); }
-#line 3091 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3091 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_constant_decl: // constant_decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).constant)); }
-#line 3097 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3097 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_enumerator: // enumerator
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).enumerator)); }
-#line 3103 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3103 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_enumerators: // enumerators
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).enumerators)); }
-#line 3109 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3109 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_enum_decl_body: // enum_decl_body
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).enumerators)); }
-#line 3115 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3115 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_enum_decl: // enum_decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).declaration)); }
-#line 3121 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3121 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_union_decl: // union_decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).declaration)); }
-#line 3127 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3127 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_method_decl: // method_decl
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).method)); }
-#line 3133 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3133 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_arg_non_empty_list: // arg_non_empty_list
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).arg_list)); }
-#line 3139 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3139 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_arg_list: // arg_list
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).arg_list)); }
-#line 3145 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3145 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_arg: // arg
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).arg)); }
-#line 3151 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3151 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_non_array_type: // non_array_type
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).type)); }
-#line 3157 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3157 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_type: // type
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).type)); }
-#line 3163 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3163 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_type_args: // type_args
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).type_args)); }
-#line 3169 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3169 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_annotation_list: // annotation_list
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).annotation_list)); }
-#line 3175 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3175 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_parameter: // parameter
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).param)); }
-#line 3181 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3181 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_parameter_list: // parameter_list
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).param_list)); }
-#line 3187 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3187 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_parameter_non_empty_list: // parameter_non_empty_list
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).param_list)); }
-#line 3193 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3193 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_annotation: // annotation
-#line 98 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 98 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { delete (((*yyvaluep).annotation)); }
-#line 3199 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3199 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
     case S_direction: // direction
-#line 97 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 97 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
             { }
-#line 3205 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 3205 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
         break;
 
       default:
@@ -4631,13 +4631,13 @@ yy_parse_impl (yy::parser& yyparser, Parser* ps)
 
   // User initialization code.
 yylloc.initialize ();
-#line 54 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 54 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
 {
     yylloc.begin.filename = yylloc.end.filename =
         const_cast<std::string *>(&ps->FileName());
 }
 
-#line 4641 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 4641 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
 
 
   if (! yyinitGLRStack (yystackp, YYINITDEPTH))
@@ -4931,7 +4931,7 @@ yypdumpstack (yyGLRStack* yystackp)
 
 
 
-#line 4935 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 4935 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
 
 /*------------------.
 | Report an error.  |
@@ -4949,7 +4949,7 @@ yyerror (const yy::parser::location_type *yylocationp,
 
 
 namespace yy {
-#line 4953 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 4953 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
 
   /// Build a parser object.
   parser::parser (Parser* ps_yyarg)
@@ -5037,7 +5037,7 @@ namespace yy {
 
 #endif
 } // yy
-#line 5041 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.cpp"
+#line 5041 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.cpp"
 
 #undef YYEMPTY
 #undef YYEOF
@@ -5141,7 +5141,7 @@ namespace yy {
 #undef S_annotation
 #undef S_direction
 
-#line 825 "/storage/emulated/0/AppProjects/aapt/src/aidl/aidl_language_y.yy"
+#line 825 "/data/data/com.termux/files/home/projects/aapt/src/aidl/aidl_language_y.yy"
 
 
 #include <ctype.h>
