@@ -1,0 +1,26 @@
+# *** THIS PACKAGE HAS SPECIAL LICENSING CONDITIONS.  PLEASE
+#     CONSULT THE OWNERS AND opensource-licensing@google.com BEFORE
+#     DEPENDING ON IT IN YOUR PROJECT. ***
+name: "expat"
+description: "Expat is a stream-oriented XML parser."
+third_party {
+  url {
+    type: HOMEPAGE
+    value: "https://github.com/libexpat/libexpat/"
+  }
+  url {
+    type: ARCHIVE
+    value: "https://github.com/libexpat/libexpat/releases/download/R_2_4_8/expat-2.4.8.tar.bz2"
+  }
+  version: "R_2_4_8"
+  license_type: BY_EXCEPTION_ONLY
+  license_note: "contains GFDL documentation"
+  security {
+    tag: "NVD-CPE2.3:cpe:/a:libexpat_project:libexpat:2.4.8"
+  }
+  last_upgrade_date {
+    year: 2022
+    month: 5
+    day: 23
+  }
+}
