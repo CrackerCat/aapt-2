@@ -6,6 +6,9 @@ add_library(libziparchive STATIC
     ${SRC_PATH}/libziparchive/zip_error.cpp
     ${SRC_PATH}/libziparchive/incfs_support/signal_handling.cpp)
 
+target_compile_options(libziparchive PRIVATE
+    -std=c++20)
+
 target_compile_definitions(libziparchive PRIVATE
     -DZLIB_CONST
     -D_FILE_OFFSET_BITS=64

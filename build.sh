@@ -22,7 +22,7 @@ out_dir="$root/output/$abi"
 rm -rf ${build_dir} || exit 1
 
 cmake -GNinja \
-    -B ${build_dir} \
+    -B "${build_dir}" \
     -DANDROID_NDK=${NDK_PATH} \
     -DCMAKE_TOOLCHAIN_FILE=${NDK_TOOLCHAIN_FILE} \
     -DANDROID_PLATFORM="android-$api" \
@@ -31,7 +31,6 @@ cmake -GNinja \
     -DCMAKE_SYSTEM_NAME="Android" \
     -DCMAKE_BUILD_TYPE="Release" \
     -DANDROID_STL="$stl" \
-    -DCMAKE_SYSROOT="${NDK_TOOLCHAIN}/sysroot" \
     || exit 1
     
 ninja -C ${build_dir} -j8 || exit 1
@@ -41,13 +40,12 @@ ninja -C ${build_dir} -j8 || exit 1
 "$NDK_TOOLCHAIN/bin/llvm-strip" --strip-all "$binary_dir/aidl"
 "$NDK_TOOLCHAIN/bin/llvm-strip" --strip-all "$binary_dir/zipalign"
 
-termux-elf-cleaner --api-level "${api}" "$binary_dir/aapt"
-termux-elf-cleaner --api-level "${api}" "$binary_dir/aapt2"
-termux-elf-cleaner --api-level "${api}" "$binary_dir/aidl"
-termux-elf-cleaner --api-level "${api}" "$binary_dir/zipalign"
+termux-elf-cleaner --api-level "$api" "$binary_dir/aapt"
+termux-elf-cleaner --api-level "$api" "$binary_dir/aapt2"
+termux-elf-cleaner --api-level "$api" "$binary_dir/aidl"
+termux-elf-cleaner --api-level "$api" "$binary_dir/zipalign"
 
 mkdir -p "$out_dir"
-
 mv "$binary_dir/aapt" "$out_dir"
 mv "$binary_dir/aapt2" "$out_dir"
 mv "$binary_dir/aidl" "$out_dir"
